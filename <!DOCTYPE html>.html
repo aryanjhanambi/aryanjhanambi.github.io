@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Canera Carousel</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+    }
+
+    .carousel {
+      position: relative;
+      max-width: 100%;
+      height: 500px;
+      overflow: hidden;
+      margin: auto;
+    }
+
+    .slide {
+      display: none;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .fade {
+      animation: fade 1s ease-in-out;
+    }
+
+    @keyframes fade {
+      from { opacity: 0.4; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="carousel">
+    <div class="slide fade">
+      <img src="https://images.unsplash.com/photo-1559757175-5700dde67594?auto=format&fit=crop&w=1600&q=80" alt="Students">
+    </div>
+    <div class="slide fade">
+      <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=1600&q=80" alt="Graduation">
+    </div>
+    <div class="slide fade">
+      <img src="https://images.unsplash.com/photo-1600195077075-04a770251f47?auto=format&fit=crop&w=1600&q=80" alt="University">
+    </div>
+  </section>
+
+  <script>
+    let slideIndex = 0;
+    const showSlides = () => {
+      const slides = document.getElementsByClassName("slide");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1; }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 4000); // change every 4 sec
+    };
+    showSlides();
+  </script>
+
+</body>
+</html>
