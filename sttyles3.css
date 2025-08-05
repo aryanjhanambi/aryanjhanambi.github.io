@@ -1,0 +1,344 @@
+:root {
+  --primary: #d4af37;
+  --secondary: #f7f7f7;
+  --text: #222;
+  --accent: #1a1a1a;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.navbar {
+  background: var(--white);
+  border-bottom: 1px solid #e6e6e6;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.nav-left ul,
+.nav-right ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary);
+  white-space: nowrap;
+}
+
+.book-btn {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.book-btn:hover {
+  background: #b8962e;
+}
+
+.cta-btn {
+  background: var(--primary);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.cta-btn:hover {
+  background: #b8962e;
+}
+
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?fit=crop&w=1500&q=80') center/cover no-repeat;
+  color: var(--white);
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Your other sections can stay unchanged */
+:root {
+  --primary: #d4af37;
+  --secondary: #fdfaf6;
+  --text: #1a1a1a;
+  --white: #ffffff;
+  --gray: #f2f2f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-color: var(--secondary);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Centered Logo */
+.center-logo {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary);
+  margin: 1.5rem 0 0.5rem;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--white);
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+.book-btn {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?fit=crop&w=1500&q=80') center/cover no-repeat;
+  color: var(--white);
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-btn {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.cta-btn:hover {
+  background-color: #b8962e;
+}
+
+/* Sections */
+.section {
+  padding: 4rem 2rem;
+}
+
+.light-bg {
+  background-color: var(--white);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Cards Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: var(--white);
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Highlight CTA Section */
+.highlight {
+  background-color: var(--primary);
+  color: var(--white);
+  text-align: center;
+}
+
+.highlight .cta-btn {
+  margin-top: 1rem;
+  background-color: var(--white);
+  color: var(--primary);
+}
+
+.highlight .cta-btn:hover {
+  background-color: #fff3cc;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--text);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+}
+.about-section {
+  background-color: white;
+  padding: 80px 20px;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-image {
+  flex: 1;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  flex: 1;
+  color: #333;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-text .gold {
+  color: #c4a000;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.gold-underline {
+  width: 60px;
+  height: 4px;
+  background-color: #c4a000;
+  margin: 20px 0;
+}
+.wave-divider {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.wave-divider svg {
+  display: block;
+  width: 100%;
+  height: 100px;
+}

@@ -1,0 +1,121 @@
+:root {
+  --primary: #d4af37; /* Gold */
+  --white: #ffffff;
+  --black: #111111;
+  --light: #f9f9f9;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--white);
+  color: var(--black);
+}
+
+.navbar {
+  background: var(--white);
+  border-bottom: 1px solid #e5e5e5;
+  padding: 1rem 2rem;
+}
+
+.navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 500;
+}
+
+.book-btn {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 0.5rem 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.book-btn:hover {
+  background-color: #b9982e;
+}
+
+/* Hero Section */
+.hero {
+  background: var(--light);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: var(--primary);
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-top: 1rem;
+}
+
+/* Booking Cards */
+.booking-section {
+  padding: 4rem 2rem;
+}
+
+.booking-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.booking-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+  background: var(--white);
+}
+
+.booking-card h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.booking-card p {
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.booking-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  background-color: var(--light);
+  color: #777;
+}
